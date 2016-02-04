@@ -1,0 +1,72 @@
+#mainNav ul a, #mainNav ul li.sfHover ul a {
+    color: #8f8f8f !important;
+}
+
+#mainNav ul li.current a,
+#mainNav ul li.current-cat a,
+#mainNav ul li.current_page_item a,
+#mainNav ul li.current-menu-item a,
+#mainNav ul li.current-post-ancestor a,
+.single-post #mainNav ul li.current_page_parent a,
+#mainNav ul li.current-category-parent a,
+#mainNav ul li.current-category-ancestor a,
+#mainNav ul li.current-portfolio-ancestor a,
+#mainNav ul li.current-projects-ancestor a {
+    color: #2e2e2e !important;
+}
+
+#mainNav ul li.sfHover a,
+#mainNav ul li a:hover,
+#mainNav ul li:hover {
+    color: #2e2e2e !important;
+}
+#mainNav ul li.sfHover ul a:hover {
+    color: #2e2e2e !important;
+}
+
+blockquote, address {
+    border-left: 5px solid #41494f;
+}
+#content #filterNav,
+#content .project.small .overlay,
+.f_circleG,
+.skillList li span a:hover,
+.tax-skill #pageHead {
+    background: #41494f;
+}
+
+@-webkit-keyframes f_fadeG{
+    0%{background-color:#ffffff}
+    100%{background-color:#41494f;}
+}
+
+@-moz-keyframes f_fadeG{
+    0%{background-color:#ffffff}
+    100%{background-color:#41494f;}
+}
+
+@-o-keyframes f_fadeG{
+    0%{background-color:#ffffff}
+    100%{background-color:#41494f;}
+}
+
+@-ms-keyframes f_fadeG{
+    0%{background-color:#ffffff}
+    100%{background-color:#41494f;}
+}
+
+a {
+    color: #77a7b9;
+}
+
+a:hover {
+    color: #8dc7dc;
+}
+
+.button, #searchsubmit, input[type="submit"] {
+    background-color: #41494f !important;
+}
+
+.button:hover, #searchsubmit:hover, input[type="submit"]:hover {
+    background-color: #cdb980 !important;
+}
