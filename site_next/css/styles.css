@@ -1,0 +1,219 @@
+/*
+ * "It’s art if can’t be explained. It’s fashion if no one asks for an
+ * explanation. It’s design if it doesn’t need explanation."
+ *
+ * ~ Wouter Stokkel
+ */
+
+body {
+    display: flex;
+    flex-direction: row;
+
+    width: 98%;
+    padding: 0 1%;
+    margin: 0;
+    background-color: #465D71;
+    height: 100%;
+}
+
+body, section, h1, h2, h3, h4, h5, h6, p, a {
+    color: #02242d;
+}
+
+.left_panel {
+    flex-grow: 0;
+
+    min-width: 140px;
+    width: 140px;
+    max-width: 140px;
+
+    height: 326px;
+
+    /* width: 8%; */
+    background-color: #6386A0;
+    margin: 0;
+    padding: 0.5em 1%;
+
+    -webkit-box-shadow: -3px 3px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -3px 3px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: -3px 3px 5px 0px rgba(0,0,0,0.75);
+
+    text-align: center;
+}
+
+.left_panel ul {
+    list-style-type: none;
+}
+
+.left_panel ul li {
+    margin-top: 0.4em;
+    margin-bottom: 0.4em;
+}
+
+.box {
+    position:relative;
+    vertical-align: middle;
+    color: #02242d;
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    transition: 0.5s;
+    padding: 0 20px;
+    cursor: pointer;
+    border: 2px solid #02242d;
+    -webkit-transition:0.5s;
+}
+
+.box:hover {
+    border: 2px solid rgba(0,160,80,0);
+    color: #FFF;
+}
+
+.box::before, .box::after {
+    width: 100%;
+    height:100%;
+    z-index: 3;
+    content:'';
+    position: absolute;
+    top:0;
+    left:0;
+    box-sizing: border-box;
+    -webkit-transform: scale(0);
+    transition: 0.5s;
+}
+
+.fade::before {
+    border-bottom: 3px solid #FFF;
+    border-left: 3px solid #FFF;
+    -webkit-transform-origin: 0 100%;
+}
+
+.fade::after {
+    border-top: 3px solid #FFF;
+    border-right: 3px solid #FFF;
+    -webkit-transform-origin: 100% 0%;
+}
+
+.main {
+    flex-grow: 1;
+
+    width: 86%;
+    background-color: #92B3C4;
+    margin: 0;
+    padding: 0 2%;
+
+    -webkit-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+}
+
+.main h1, .main h2, .main h3, .main h4, .main h5, .main h6, .main p {
+    font-family: 'Lato', sans-serif;
+}
+
+.main h1, .main h2, .main h3, .main h4, .main h5, .main h6 {
+    font-weight: bold;
+    margin-top: 1.65em;
+    margin-bottom: 1.65em;
+}
+
+.main h1 {
+    font-size: 1.7em;
+}
+
+.main h2 {
+    font-size: 1.6em;
+}
+
+.main h3 {
+    font-size: 1.5em;
+}
+
+.main h4 {
+    font-size: 1.4em;
+}
+
+.main h5 {
+    font-size: 1.3em;
+}
+
+.main h6 {
+    font-size: 1.2em;
+}
+
+.main p {
+    font-size: 1.2em;
+    font-weight: normal;
+    margin-top: 1.6em;
+    margin-bottom: 1.6em;
+    line-height: 1.3em;
+}
+
+@media all and (max-width: 1001px) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left_panel {
+        flex-grow: 1;
+        height: 200px;
+
+        min-width: 98%;
+        width: 98%;
+        max-width: 98%;
+
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+    }
+
+    .main {
+        flex-grow: 1;
+        width: 96%;
+
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+    }
+}
+
+@media all and (max-width: 1000px) and (min-width: 715px) {
+    .left_panel {
+        height: 48px;
+    }
+}
+
+@media all and (max-width: 714px) and (min-width: 410px) {
+    .left_panel {
+        height: 93px;
+    }
+}
+
+@media all and (max-width: 409px) and (min-width: 10px) {
+    .left_panel {
+        height: 140px;
+    }
+}
+
+hr.styled-end {
+    padding: 0;
+    border: none;
+    border-top: medium double #02242d;
+    color: #02242d;
+    text-align: center;
+    margin-top: 1.65em;
+    margin-bottom: 1.65em;
+}
+
+hr.styled-end:after {
+    /* end - 終わり (Owari) in Japanese */
+    content: '終わり';
+    display: inline-block;
+    position: relative;
+    top: -0.7em;
+    font-size: 1.5em;
+    padding: 0 0.25em;
+    background: #92B3C4;
+}
