@@ -151,6 +151,8 @@ a, a:hover, a:visited {
 
 .main ul {
     list-style-type: none;
+    margin-top: 1.6em;
+    margin-bottom: 1.6em;
 }
 
 .main ul li {
