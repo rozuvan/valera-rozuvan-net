@@ -20,6 +20,9 @@
         <link rel="stylesheet" href="../css/reset.css" />
         <link rel="stylesheet" href="../css/fonts.css" />
         <link rel="stylesheet" href="../css/styles.css" />
+        <link rel="stylesheet" href="css/custom.css" />
+
+        <script data-main="js/main" src="../js/vendor/requirejs/require.min.js"></script>
     </head>
 
     <body>
@@ -39,150 +42,105 @@
         <section class="main">
             <h1>Blog</h1>
 
-            <h3>2017</h3>
+            <div class="buttons">
+                <a class="btn blue" href="#" data-tag="javascript">JavaScript</a>
+                <a class="btn green" href="#" data-tag="software">Software</a>
+                <a class="btn red" href="#" data-tag="process">Process</a>
+                <a class="btn purple" href="#" data-tag="writing">Writing</a>
+                <a class="btn orange" href="#" data-tag="reading">Reading</a>
+                <a class="btn yellow" href="#" data-tag="linux">Linux</a>
+                <a class="btn blue" href="#" data-tag="emacs">Emacs</a>
+                <a class="btn green" href="#" data-tag="sport">Sport</a>
+                <a class="btn red" href="#" data-tag="music">Music</a>
+                <a class="btn purple" href="#" data-tag="mathematics">Mathematics</a>
+                <a class="btn orange" href="#" data-tag="programming">Programming</a>
+                <a class="btn yellow" href="#" data-tag="photography">Photography</a>
+                <a class="btn blue" href="#" data-tag="world">World</a>
+                <a class="btn green" href="#" data-tag="blog">Blog</a>
+                <a class="btn red" href="#" data-tag="projects">Projects</a>
+                <a class="btn purple" href="#" data-tag="concept">Concept</a>
+            </div>
 
-            <h6>August</h6>
+            <ul class="blog_posts">
+                <li><a href="http://valera.rozuvan.net/site_next/blog/web-application-framework/index.html" data-tags="software">2017.08.13 &bull; Web Application Framework</a></li>
 
-            <ul>
-                <li><a href="http://valera.rozuvan.net/site_next/blog/web-application-framework/index.html">2017.08.13 &bull; Web Application Framework</a></li>
-            </ul>
+                <li><a href="#" data-tags="blog projects">2017.03.26 &bull; An update: Next steps for Nintoku blog</a></li>
 
-            <h6>March</h6>
+                <li><a href="#" data-tags="javascript programming">2016.06.05 &bull; Test of JavaScript Web Workers</a></li>
 
-            <ul>
-                <li><a href="#">2017.03.26 &bull; An update: Next steps for Nintoku blog</a></li>
-            </ul>
+                <li><a href="#" data-tags="projects">2016.01.02 &bull; How to setup and configure Raspberry Pi 2</a></li>
+                <li><a href="#" data-tags="sport">2016.01.01 &bull; 4th Grand Prix half marathon Yule 2015</a></li>
 
-            <h3>2016</h3>
+                <li><a href="#" data-tags="writing mathematics">2015.08.03 &bull; Some peculiarities of Grothendieck's life</a></li>
 
-            <h6>June</h6>
+                <li><a href="#" data-tags="blog projects javascript">2015.07.24 &bull; 1st test: Executable JavaScript in a post</a></li>
+                <li><a href="#" data-tags="writing concept">2015.07.10 &bull; Ideas: A WebGL visual Tile-o-Drom</a></li>
+                <li><a href="#" data-tags="javascript">2015.07.08 &bull; jQuery broken promises illustrated</a></li>
 
-            <ul>
-                <li><a href="#">2016.06.05 &bull; Test of JavaScript Web Workers</a></li>
-            </ul>
+                <li><a href="#" data-tags="linux">2015.04.15 &bull; Adding Sublime Text to Debian menu</a></li>
 
-            <h6>January</h6>
+                <li><a href="#" data-tags="linux music">2014.06.15 &bull; Scrobbling to Last.fm from Linux</a></li>
 
-            <ul>
-                <li><a href="#">2016.01.02 &bull; How to setup and configure Raspberry Pi 2</a></li>
-                <li><a href="#">2016.01.01 &bull; 4th Grand Prix half marathon Yule 2015</a></li>
-            </ul>
+                <li><a href="#" data-tags="process">2014.05.23 &bull; Smart Pomodoro Workflow</a></li>
+                <li><a href="#" data-tags="writing process software">2014.05.23 &bull; Managing the Development of Large Software Systems</a></li>
 
-            <h3>2015</h3>
+                <li><a href="#" data-tags="javascript">2014.04.28 &bull; Parsing URLs with JavaScript</a></li>
+                <li><a href="#" data-tags="photography projects">2014.04.24 &bull; Release of a photoblog</a></li>
+                <li><a href="#" data-tags="javascript">2014.04.18 &bull; UPDATE: The New Age of JavaScript: Concurrency</a></li>
+                <li><a href="#" data-tags="linux">2014.04.18 &bull; Little Linux command discoveries</a></li>
+                <li><a href="#" data-tags="writing music">2014.04.18 &bull; Musings</a></li>
+                <li><a href="#" data-tags="javascript">2014.04.09 &bull; I prefer JSHint over JSLint</a></li>
+                <li><a href="#" data-tags="music">2014.04.06 &bull; HARD: Project by mr. Iks</a></li>
+                <li><a href="#" data-tags="linux">2014.04.04 &bull; Tiling window managers</a></li>
+                <li><a href="#" data-tags="javascript">2014.04.02 &bull; The New Age of JavaScript: Concurrency</a></li>
 
-            <h6>August</h6>
+                <li><a href="#" data-tags="software programming">2014.03.24 &bull; Namespacing all YouTube URLs on edX backend</a></li>
+                <li><a href="#" data-tags="writing">2014.03.21 &bull; Seeking inspiration</a></li>
+                <li><a href="#" data-tags="reading">2014.03.19 &bull; Kitchens and moons by Banana</a></li>
+                <li><a href="#" data-tags="emacs linux">2014.03.18 &bull; Installing Emacs on Debian wheezy</a></li>
+                <li><a href="#" data-tags="emacs">2014.03.17 &bull; Using Emacs for everything</a></li>
+                <li><a href="#" data-tags="emacs">2014.03.01 &bull; Theming Emacs</a></li>
 
-            <ul>
-                <li><a href="#">2015.08.03 &bull; Some peculiarities of Grothendieck's life</a></li>
-            </ul>
+                <li><a href="#" data-tags="world writing">2014.02.27 &bull; The fall of the Ukrainian hryvnia</a></li>
+                <li><a href="#" data-tags="programming javascript mathematics">2014.02.26 &bull; Paths, curves, and trajectories</a></li>
+                <li><a href="#" data-tags="programming writing">2014.02.25 &bull; Languages I want to learn</a></li>
+                <li><a href="#" data-tags="writing">2014.02.21 &bull; The current state of things</a></li>
+                <li><a href="#" data-tags="reading">2014.02.18 &bull; Reading Japanese</a></li>
+                <li><a href="#" data-tags="writing">2014.02.17 &bull; Work in progress</a></li>
+                <li><a href="#" data-tags="emacs programming">2014.02.14 &bull; SCSS and CoffeeScript for Emacs</a></li>
+                <li><a href="#" data-tags="emacs">2014.02.12 &bull; Back to Emacs</a></li>
+                <li><a href="#" data-tags="writing projects">2014.02.10 &bull; Updated home page with Google analytics</a></li>
+                <li><a href="#" data-tags="mathematics">2014.02.07 &bull; Group theory related question</a></li>
+                <li><a href="#" data-tags="programming software">2014.02.06 &bull; Get Twitter feed with PHP</a></li>
+                <li><a href="#" data-tags="javascript">2014.02.05 &bull; Retrieving title of a site</a></li>
+                <li><a href="#" data-tags="projects">2014.02.03 &bull; Working on side projects</a></li>
 
-            <h6>July</h6>
+                <li><a href="#" data-tags="software projects">2014.01.31 &bull; Bookmarks manager hosted on GitHub</a></li>
+                <li><a href="#" data-tags="mathematics software blog">2014.01.30 &bull; MathJax tests</a></li>
+                <li><a href="#" data-tags="mathematics">2014.01.29 &bull; Lagrange's Theorem</a></li>
+                <li><a href="#" data-tags="mathematics">2014.01.28 &bull; A Group</a></li>
+                <li><a href="#" data-tags="mathematics">2014.01.27 &bull; Cantor and infinity</a></li>
+                <li><a href="#" data-tags="mathematics">2014.01.24 &bull; Extraordinary worlds in mathematics</a></li>
+                <li><a href="#" data-tags="software projects programming">2014.01.23 &bull; The first pull request</a></li>
+                <li><a href="#" data-tags="projects programming software">2014.01.22 &bull; A simple bus time schedule application</a></li>
+                <li><a href="#" data-tags="mathematics">2014.01.21 &bull; Infinitely many twin primes: a reality</a></li>
+                <li><a href="#" data-tags="mathematics">2014.01.20 &bull; The astounding beauty of mathematics</a></li>
+                <li><a href="#" data-tags="writing">2014.01.17 &bull; Sweet moments</a></li>
+                <li><a href="#" data-tags="projects javascript programming">2014.01.16 &bull; Making a multi-player Xonix</a></li>
+                <li><a href="#" data-tags="writing">2014.01.15 &bull; The winter in Japan</a></li>
+                <li><a href="#" data-tags="reading">2014.01.13 &bull; Project Gutenberg top 100</a></li>
+                <li><a href="#" data-tags="reading">2014.01.10 &bull; Must read Japanese authors</a></li>
+                <li><a href="#" data-tags="writing process">2014.01.09 &bull; Why do we procrastinate...</a></li>
 
-            <ul>
-                <li><a href="#">2015.07.24 &bull; 1st test: Executable JavaScript in a post</a></li>
-                <li><a href="#">2015.07.10 &bull; Ideas: A WebGL visual Tile-o-Drom</a></li>
-                <li><a href="#">2015.07.08 &bull; jQuery broken promises illustrated</a></li>
-            </ul>
-
-            <h6>March</h6>
-
-            <ul>
-                <li><a href="#">2015.04.15 &bull; Adding Sublime Text to Debian menu</a></li>
-            </ul>
-
-            <h3>2014</h3>
-
-            <h6>June</h6>
-
-            <ul>
-                <li><a href="#">2014.06.15 &bull; Scrobbling to Last.fm from Linux</a></li>
-            </ul>
-
-            <h6>May</h6>
-
-            <ul>
-                <li><a href="#">2014.05.23 &bull; Smart Pomodoro Workflow</a></li>
-                <li><a href="#">2014.05.23 &bull; Managing the Development of Large Software Systems</a></li>
-            </ul>
-
-            <h6>April</h6>
-
-            <ul>
-                <li><a href="#">2014.04.28 &bull; Parsing URLs with JavaScript</a></li>
-                <li><a href="#">2014.04.24 &bull; Release of a photoblog</a></li>
-                <li><a href="#">2014.04.18 &bull; UPDATE: The New Age of JavaScript: Concurrency</a></li>
-                <li><a href="#">2014.04.18 &bull; Little Linux command discoveries</a></li>
-                <li><a href="#">2014.04.18 &bull; Musings</a></li>
-                <li><a href="#">2014.04.09 &bull; I prefer JSHint over JSLint</a></li>
-                <li><a href="#">2014.04.06 &bull; HARD: Project by mr. Iks</a></li>
-                <li><a href="#">2014.04.04 &bull; Tiling window managers</a></li>
-                <li><a href="#">2014.04.02 &bull; The New Age of JavaScript: Concurrency</a></li>
-            </ul>
-
-            <h6>March</h6>
-
-            <ul>
-                <li><a href="#">2014.03.24 &bull; Namespacing all YouTube URLs on edX backend</a></li>
-                <li><a href="#">2014.03.21 &bull; Seeking inspiration</a></li>
-                <li><a href="#">2014.03.19 &bull; Kitchens and moons by Banana</a></li>
-                <li><a href="#">2014.03.18 &bull; Installing Emacs on Debian wheezy</a></li>
-                <li><a href="#">2014.03.17 &bull; Using Emacs for everything</a></li>
-                <li><a href="#">2014.03.01 &bull; Theming Emacs</a></li>
-            </ul>
-
-            <h6>February</h6>
-
-            <ul>
-                <li><a href="#">2014.02.27 &bull; The fall of the Ukrainian hryvnia</a></li>
-                <li><a href="#">2014.02.26 &bull; Paths, curves, and trajectories</a></li>
-                <li><a href="#">2014.02.25 &bull; Languages I want to learn</a></li>
-                <li><a href="#">2014.02.21 &bull; The current state of things</a></li>
-                <li><a href="#">2014.02.18 &bull; Reading Japanese</a></li>
-                <li><a href="#">2014.02.17 &bull; Work in progress</a></li>
-                <li><a href="#">2014.02.14 &bull; SCSS and CoffeeScript for Emacs</a></li>
-                <li><a href="#">2014.02.12 &bull; Back to Emacs</a></li>
-                <li><a href="#">2014.02.10 &bull; Updated home page with Google analytics</a></li>
-                <li><a href="#">2014.02.07 &bull; Group theory related question</a></li>
-                <li><a href="#">2014.02.06 &bull; Get Twitter feed with PHP</a></li>
-                <li><a href="#">2014.02.05 &bull; Retrieving title of a site</a></li>
-                <li><a href="#">2014.02.03 &bull; Working on side projects</a></li>
-            </ul>
-
-            <h6>January</h6>
-
-            <ul>
-                <li><a href="#">2014.01.31 &bull; Bookmarks manager hosted on GitHub</a></li>
-                <li><a href="#">2014.01.30 &bull; MathJax tests</a></li>
-                <li><a href="#">2014.01.29 &bull; Lagrange's Theorem</a></li>
-                <li><a href="#">2014.01.28 &bull; A Group</a></li>
-                <li><a href="#">2014.01.27 &bull; Cantor and infinity</a></li>
-                <li><a href="#">2014.01.24 &bull; Extraordinary worlds in mathematics</a></li>
-                <li><a href="#">2014.01.23 &bull; The first pull request</a></li>
-                <li><a href="#">2014.01.22 &bull; A simple bus time schedule application</a></li>
-                <li><a href="#">2014.01.21 &bull; Infinitely many twin primes: a reality</a></li>
-                <li><a href="#">2014.01.20 &bull; The astounding beauty of mathematics</a></li>
-                <li><a href="#">2014.01.17 &bull; Sweet moments</a></li>
-                <li><a href="#">2014.01.16 &bull; Making a multi-player Xonix</a></li>
-                <li><a href="#">2014.01.15 &bull; The winter in Japan</a></li>
-                <li><a href="#">2014.01.13 &bull; Project Gutenberg top 100</a></li>
-                <li><a href="#">2014.01.10 &bull; Must read Japanese authors</a></li>
-                <li><a href="#">2014.01.09 &bull; Why do we procrastinate...</a></li>
-            </ul>
-
-            <h3>2013</h3>
-
-            <h6>December</h6>
-
-            <ul>
-                <li><a href="#">2013.12.24 &bull; What is up with world economy?</a></li>
-                <li><a href="#">2013.12.23 &bull; JavaScript for Gnome</a></li>
-                <li><a href="#">2013.12.19 &bull; Murakami</a></li>
-                <li><a href="#">2013.12.18 &bull; Idea matters more than code</a></li>
-                <li><a href="#">2013.12.18 &bull; Joe Hisaishi - a Japanese musician</a></li>
-                <li><a href="#">2013.12.17 &bull; Code highlighting in a Jekyll-based blog</a></li>
-                <li><a href="#">2013.12.16 &bull; Jasmine toBeCloseTo() matcher</a></li>
-                <li><a href="#">2013.12.13 &bull; Simple HTML5 template with jQuery, and Require JS</a></li>
-                <li><a href="#">2013.12.12 &bull; Sakai PHP unit test for LTI</a></li>
+                <li><a href="#" data-tags="world">2013.12.24 &bull; What is up with world economy?</a></li>
+                <li><a href="#" data-tags="javascript linux">2013.12.23 &bull; JavaScript for Gnome</a></li>
+                <li><a href="#" data-tags="reading writing">2013.12.19 &bull; Murakami</a></li>
+                <li><a href="#" data-tags="writing">2013.12.18 &bull; Idea matters more than code</a></li>
+                <li><a href="#" data-tags="writing music">2013.12.18 &bull; Joe Hisaishi - a Japanese musician</a></li>
+                <li><a href="#" data-tags="programming blog projects">2013.12.17 &bull; Code highlighting in a Jekyll-based blog</a></li>
+                <li><a href="#" data-tags="programming javascript">2013.12.16 &bull; Jasmine toBeCloseTo() matcher</a></li>
+                <li><a href="#" data-tags="programming javascript">2013.12.13 &bull; Simple HTML5 template with jQuery, and Require JS</a></li>
+                <li><a href="#" data-tags="programming software">2013.12.12 &bull; Sakai PHP unit test for LTI</a></li>
             </ul>
 
             <hr class="styled-end"/>
