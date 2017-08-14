@@ -41,26 +41,47 @@
         <section class="main">
             <h1>Web Application Framework</h1>
 
-            <p>So recently it was announced to my team that we were going to work on something called the "UI Framework".
-            To say that we were excited is like not saying anything at all. For the last month or so we have been on a
-            redesign spree. Boring work of applying styling changes to an existing web application. I should mention that
-            the web application we are working on - is quite a mess of old JavaScript technologies. So we were excited -
-            actually something cool to work on! When you get a chance to do something form scratch within a large
-            organization, you are in luck.</p>
+            <p>So recently it was announced to my team that we were going to work on something called the
+            "UI Framework". To say that we were excited is like not saying anything at all. For the last month or so we
+            have been on a redesign spree. Boring work of applying styling changes to an existing web application. I
+            should mention that the web application we are working on - is quite a mess of old JavaScript technologies.
+            So we were excited - actually something cool to work on! When you get a chance to do something form scratch
+            within a large organization, you are in luck.</p>
 
             <p>There was a problem though. What exactly were we supposed to build up? I mean the term "UI Framework" is
-            quite an abstract term in our case. First of all, we knew that the web application was getting replaced in the
-            future by our work. Secondly, we were tasked with creating this "framework". Honestly, aren't there enough
-            frameworks out there? Fortunately, after a week or two of conversations the picture started to become more
-            clear.</p>
+            quite an abstract term in our case. First of all, we knew that the web application was getting replaced in
+            the future by our work. Secondly, we were tasked with creating this "framework". Honestly, aren't there
+            enough frameworks out there? Fortunately, after a week or two of conversations the picture started to become
+            more clear.</p>
 
             <h2>Zalando and Mosaic9</h2>
 
-            <p>dfjksghdfjk jk djks fd f dfjk dsfdjksfh djffh ksf dsfjkhds fjdsfh dsfjk
-            jksdfh dfjhds fjkfhds fjkdsh fdjksfh dsfjkdhs fjkdsfh djksfdhs fjkdsfh dksfjh dklsjf dkfjds f
-            dklsfj dfldfj dsklf dsfjldf dlkfjds kfljdsf dfkljd flksfjds fl
-            djksfh djkfhd fdjf dsfjkdhs fkdfh dsfj
-            jklsdf dklfjds fkdsfj dklsfdsj fl</p>
+            <p>More precisely, the picture became very clear when we got an e-mail from our boss telling us to look into
+            the project <a href="https://www.mosaic9.org/">Mosaic9</a> from
+            <a href="http://www.zalando.com/">Zalando</a>. From the project's site we learn that:</p>
+
+            <blockquote>Mosaic is a set of services, libraries together with a specification that defines how its components interact with each other, to support a microservice style architecture for large scale websites.</blockquote>
+
+            <p>When you start to browse through the material on Mosaic9, the first thing that comes to mind is that it's
+            a project that deals with infrastructure to make a web application very fast. This idea is not far off. If
+            you take a look at the Zalando store, browse it for a bit, you will notice that it's blazingly fast. If the
+            underlying infrastructure of Zalando is actually Mosaic9 - then it's a pretty impressive infrastructure! The
+            developers have thought things through :) Let's dive a bit deeper into what actually Mosaic9 is.</p>
+
+            <h2>Micro frontends or BFF</h2>
+
+            <p>Microservices have been around for a long time. This pattern is not really new for the world of back-end
+            development. However, recently this concept started to emerge in the world of front-end development. With
+            web applications becoming larger and larger, teams are starting to struggle to develop these monolithic applications.</p>
+
+            <p>A very big pain is when you have several teams working on the same monolithic web application.
+            This is something that my team found out as well, with our current large monolith (based on old tech, don't
+            forget). It's hard to introduce new features without affecting other teams. It's hard to deliver some small
+            changes to production without having to synchronize deployments with other teams. With code added, the
+            overall application just becomes slower and slower.</p>
+
+            <p>So how exactly can the concept of microservices be applied in the world of front-end web applications?
+            A quick google on this topic will turn up many interesting resources.</p>
 
             <hr class="styled-end"/>
         </section>
