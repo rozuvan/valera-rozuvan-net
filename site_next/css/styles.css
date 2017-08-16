@@ -253,7 +253,7 @@ hr.styled-end {
     color: #02242d;
     text-align: center;
     margin-top: 3.0em;
-    margin-bottom: 1.65em;
+    margin-bottom: 1.0em;
 }
 
 hr.styled-end::after {
@@ -347,4 +347,25 @@ hr.styled-end::after {
 .main p a:active {
   background: #79B9F0;
   color: #02242d;
+}
+
+.main p.copyright, .main p.copyright a {
+    font-size: 0.9em;
+    margin-top: 0;
+    margin-bottom: 2.5em;
+    text-align: center;
+}
+
+.main p.note {
+    font-style: italic;
+}
+
+.main h1.with_published_date {
+    margin-bottom: 0.2em;
+}
+
+.main p.date_published {
+    margin-top: 0;
+    margin-bottom: 2.0em;
+    font-size: 0.9em;
 }
