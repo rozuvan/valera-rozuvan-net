@@ -1,0 +1,79 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <!--
+            "Remember, the web isn't about control. If a visitor to your site
+            is familiar with using a browser's native form doodad, you won't
+            be doing them any favors if you override the browser functionality
+            with your own widget, even if you think your widget looks better."
+
+            ~ Jeremy Keith
+        -->
+
+        <meta charset="utf-8" />
+        <meta name="description" content="Blog of Valera Rozuvan. Jasmine toBeCloseTo() matcher article" />
+        <meta name="author" content="Valera Rozuvan" />
+
+        <title>Valera Rozuvan | Blog | Jasmine toBeCloseTo() matcher</title>
+
+        <link rel="stylesheet" href="../../css/reset.css" />
+
+        <link rel="stylesheet" href="../../js/vendor/codemirror/lib/codemirror.css">
+
+        <link rel="stylesheet" href="../../css/fonts.css" />
+        <link rel="stylesheet" href="../../css/styles.css" />
+
+        <script data-main="js/main" src="../../js/vendor/requirejs/require.min.js"></script>
+    </head>
+
+    <body>
+        <section class="left_panel">
+            <ul>
+                <li class="box fade"><a href="http://valera.rozuvan.net/site_next/index.html">Home</a></li>
+                <li class="box fade"><a href="http://valera.rozuvan.net/site_next/blog/index.html">Blog</a></li>
+                <li class="box fade"><a href="http://valera.rozuvan.net/site_next/photography/index.html">Photography</a></li>
+                <li class="box fade"><a href="http://valera.rozuvan.net/site_next/projects/index.html">Projects</a></li>
+                <li class="box fade"><a href="https://github.com/valera-rozuvan">GitHub</a></li>
+                <li class="box fade"><a href="https://twitter.com/valerarozuvan">Twitter</a></li>
+                <li class="box fade"><a href="http://valera.rozuvan.net/site_next/links/index.html">Links</a></li>
+                <li class="box fade"><a href="http://valera.rozuvan.net/site_next/about/index.html">About</a></li>
+            </ul>
+        </section>
+
+        <section class="main">
+            <h1 class="with_published_date">Jasmine toBeCloseTo() matcher</h1>
+
+            <p class="date_published">published: 2013.12.16</p>
+
+            <p>Today I was faced with a problem of checking that a number was really close to another number, but not
+            necessarily equal to it. <a href="https://jasmine.github.io/">Jasmine</a> has a really nifty matcher
+            <a href="https://github.com/jasmine/jasmine/blob/master/src/core/matchers/toBeCloseTo.js">toBeCloseTo()</a>
+            just for this case. See the code below.</p>
+
+            <textarea id="code" name="code">
+getJasmineRequireObj().toBeCloseTo = function() {
+
+    function toBeCloseTo() {
+        return {
+            compare: function(actual, expected, precision) {
+                if (precision !== 0) {
+                    precision = precision || 2;
+                }
+
+                return {
+                    pass: Math.abs(expected - actual) < (Math.pow(10, -precision) / 2)
+                };
+            }
+        };
+    }
+
+    return toBeCloseTo;
+};</textarea>
+
+            <hr class="styled-end" />
+
+            <p class="copyright">&copy; 2013 - 2017 <a href="http://valera.rozuvan.net/">Valera Rozuvan</a></p>
+        </section>
+    </body>
+</html>
