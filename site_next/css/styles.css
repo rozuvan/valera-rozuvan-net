@@ -369,3 +369,11 @@ hr.styled-end::after {
     margin-bottom: 2.0em;
     font-size: 0.9em;
 }
+
+.main #code {
+    width: 100%;
+}
+
+.main .CodeMirror {
+    border: 1px solid #02242d;
+}
