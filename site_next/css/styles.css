@@ -408,3 +408,7 @@ hr.styled-end::after {
     margin-bottom: 3em;
     max-width: 100%;
 }
+
+.main hr.hidden, .main p.hidden {
+    display: none;
+}
