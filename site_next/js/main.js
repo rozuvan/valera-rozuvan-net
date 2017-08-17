@@ -81,7 +81,7 @@
             newCanvas[0].width = 300;
             newCanvas[0].height = 240;
 
-            $('.main').append(newCanvas);
+            newCanvas.insertAfter($('p.intro_element_b'));
 
             // Set up!
             var canvas = document.getElementById('random_animation_canvas');
@@ -95,6 +95,12 @@
 
             var startTime = (new Date()).getTime();
             animate(state, canvas, context, startTime);
+
+            $('.main').css({
+                height: 'auto'
+            });
+            $('hr.styled-end.hidden').removeClass('hidden');
+            $('p.copyright.hidden').removeClass('hidden');
         });
     }
 
