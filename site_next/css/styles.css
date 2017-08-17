@@ -47,6 +47,13 @@ a, a:hover, a:visited {
     margin-bottom: 0.4em;
 }
 
+.left_panel ul li a {
+    display:block;
+    height: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
 .box {
     position: relative;
     vertical-align: middle;
@@ -56,7 +63,6 @@ a, a:hover, a:visited {
     line-height: 30px;
     text-align: center;
     transition: 0.5s;
-    padding: 0 20px;
     cursor: pointer;
     border: 2px solid #02242d;
     -webkit-transition: 0.5s;
