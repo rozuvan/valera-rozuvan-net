@@ -325,34 +325,34 @@ hr.styled-end::after {
 }
 
 .main p a {
-  outline: none;
-  border-bottom: 1px solid;
-  text-decoration: none;
-  padding: 2px 1px 0;
-  font-weight: bold;
+    outline: none;
+    border-bottom: 1px solid;
+    text-decoration: none;
+    padding: 2px 1px 0;
+    font-weight: bold;
 }
 
 .main p a:link {
-  color: #02242d;
+    color: #02242d;
 }
 
 .main p a:visited {
-  color: #02242d;
+    color: #02242d;
 }
 
 .main p a:focus {
-  border-bottom: 1px solid;
-  background: #79B9F0;
+    border-bottom: 1px solid;
+    background: #79B9F0;
 }
 
 .main p a:hover {
-  border-bottom: 1px solid;
-  background: #79B9F0;
+    border-bottom: 1px solid;
+    background: #79B9F0;
 }
 
 .main p a:active {
-  background: #79B9F0;
-  color: #02242d;
+    background: #79B9F0;
+    color: #02242d;
 }
 
 .main p.copyright, .main p.copyright a {
@@ -398,4 +398,13 @@ hr.styled-end::after {
     background-color: #f2f2f2;
     margin: 0 0.2em;
     padding: 0 0.4em;
+}
+
+.main img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    max-width: 100%;
 }
