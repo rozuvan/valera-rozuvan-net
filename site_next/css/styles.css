@@ -376,4 +376,20 @@ hr.styled-end::after {
 
 .main .CodeMirror {
     border: 1px solid #02242d;
+    height: auto;
+    font-size: 1.2em;
+}
+
+.main p span.bold {
+    font-weight: bold;
+}
+
+.main p span.inline_code {
+    border: 1px solid #e6e6e6;
+    -webkit-border-radius: 0.2em;
+    -moz-border-radius: 0.2em;
+    border-radius: 0.2em;
+    background-color: #f2f2f2;
+    margin: 0 0.2em;
+    padding: 0 0.4em;
 }

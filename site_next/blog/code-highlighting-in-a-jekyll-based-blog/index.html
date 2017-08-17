@@ -12,10 +12,10 @@
         -->
 
         <meta charset="utf-8" />
-        <meta name="description" content="Blog of Valera Rozuvan. Jasmine toBeCloseTo() matcher article" />
+        <meta name="description" content="Blog of Valera Rozuvan. Code highlighting in a Jekyll-based blog article" />
         <meta name="author" content="Valera Rozuvan" />
 
-        <title>Valera Rozuvan | Blog | Jasmine toBeCloseTo() matcher</title>
+        <title>Valera Rozuvan | Blog | Code highlighting in a Jekyll-based blog</title>
 
         <link rel="stylesheet" href="../../css/reset.css" />
         <link rel="stylesheet" href="../../js/vendor/codemirror/lib/codemirror.css">
@@ -40,34 +40,30 @@
         </section>
 
         <section class="main">
-            <h1 class="with_published_date">Jasmine toBeCloseTo() matcher</h1>
+            <h1 class="with_published_date">Code highlighting in a Jekyll-based blog</h1>
 
-            <p class="date_published">published: 2013.12.16</p>
+            <p class="date_published">published: 2013.12.17</p>
 
-            <p>Today I was faced with a problem of checking that a number was really close to another number, but not
-            necessarily equal to it. <a href="https://jasmine.github.io/">Jasmine</a> has a really nifty matcher
-            <a href="https://github.com/jasmine/jasmine/blob/master/src/core/matchers/toBeCloseTo.js">toBeCloseTo()</a>
-            just for this case. See the code below.</p>
+            <p>It turns out that Jekyll has access to a very powerful code highlighting system
+            <a href="http://pygments.org/">pygments</a>. There is a huge number of
+            <a href="http://pygments.org/docs/lexers/">lexers</a> that define the rules for highlighting for many,
+            many languages.</p>
+
+            <p>To use it, you surround your code block like so:</p>
 
             <textarea id="code" name="code">
-getJasmineRequireObj().toBeCloseTo = function() {
+{% highlight lexer_name %}
 
-    function toBeCloseTo() {
-        return {
-            compare: function(actual, expected, precision) {
-                if (precision !== 0) {
-                    precision = precision || 2;
-                }
+    ... code goes here ...
 
-                return {
-                    pass: Math.abs(expected - actual) < (Math.pow(10, -precision) / 2)
-                };
-            }
-        };
-    }
+{% endhighlight %}</textarea>
 
-    return toBeCloseTo;
-};</textarea>
+            <p><span class="bold">lexer_name</span> should be replaced with the short name of the programming language
+            that you require highlighting for.</p>
+
+            <p class="note">NOTE: To enable syntax highlighting, please set the <span class="inline_code">pygments</span> variable to
+            <span class="inline_code">true</span> in the <span class="inline_code">_config.yml</span> configuration file
+            (see <a href="http://jekyllrb.com/docs/templates/">reference</a>).</p>
 
             <hr class="styled-end" />
 
