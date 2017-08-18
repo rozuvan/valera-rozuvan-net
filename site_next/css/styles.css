@@ -366,6 +366,11 @@ hr.styled-end::after {
     font-style: italic;
 }
 
+.main p.one_link {
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+}
+
 .main h1.with_published_date {
     margin-bottom: 0.2em;
 }

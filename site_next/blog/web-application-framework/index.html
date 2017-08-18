@@ -39,9 +39,7 @@
         <section class="main">
             <h1 class="with_published_date">Web Application Framework</h1>
 
-            <p class="date_published">published: TBD</p>
-
-            <p class="note">NOTE: This is a work in progress!</p>
+            <p class="date_published">published: 2017.08.18</p>
 
             <p>So recently it was announced to my team that we were going to work on something called the
             "UI Framework". To say that we were excited is like not saying anything at all. For the last month or so we
@@ -70,7 +68,7 @@
             underlying infrastructure of Zalando is actually Mosaic9 - then it's a pretty impressive infrastructure! The
             developers have thought things through :) Let's dive a bit deeper into what actually Mosaic9 is.</p>
 
-            <h2>Micro frontends or BFF</h2>
+            <h2>Microfrontends or BFF</h2>
 
             <p>Microservices have been around for a long time. This pattern is not really new for the world of back-end
             development. However, recently this concept started to emerge in the world of front-end development. With
@@ -83,7 +81,41 @@
             overall application just becomes slower and slower.</p>
 
             <p>So how exactly can the concept of microservices be applied in the world of front-end web applications?
-            A quick google on this topic will turn up many interesting resources.</p>
+            A quick <a href="https://www.google.com/search?q=micro+frontends">google</a> on this topic will turn up many interesting resources. The term <span class="bold">microfrontends</span> is relatively new one. However,
+            already there are very many resources online dealing with this topic. The resources that I found most
+            insightful are:</p>
+
+            <p class="one_link"><a href="https://medium.com/@tomsoderlund/micro-frontends-a-microservice-approach-to-front-end-web-development-f325ebdadc16">&bull; Micro frontends—a microservice approach to front-end web development</a></p>
+            <p class="one_link"><a href="https://github.com/neuland/micro-frontends">&bull; extending the microservice paradigms to web development</a></p>
+            <p class="one_link"><a href="https://medium.com/@_rchaves_/building-microfrontends-part-i-creating-small-apps-710d709b48b7">&bull; Building Microfrontends Part I — Creating small apps</a></p>
+            <p class="one_link"><a href="https://www.mosaic9.org/">&bull; Project Mosaic | Microservices for the Frontend</a></p>
+            <p class="one_link"><a href="http://allegro.tech/2016/03/Managing-Frontend-in-the-microservices-architecture.html">&bull; Managing Frontend in the Microservices Architecture</a></p>
+            <p class="one_link"><a href="https://www.slideshare.net/AssafGannon/micro-frontends">&bull; Micro frontends: avoiding monolithic web applications</a></p>
+
+            <h2>What is a microfrontend exactly?</h2>
+
+            <p>For me, when I learn something new, it's best if I can visualize it. So I created two diagrams to
+            help me understand how this new microfrontends architecture differs from the existing approaches to
+            building front-end web applications. The first diagram represents the old-approach. The second diagram
+            represents the new approach. Both diagrams look at the picture from the point of view of loading time by
+            the browser of the web application. Please note that these diagrams are very generic, and obviously in the
+            real world there are many different varieties of web apps.</p>
+
+            <a href="img/classic_web_application_load_diagram.png"><img src="img/classic_web_application_load_diagram.png" /></a>
+
+            <p>Classic web application load diagram</p>
+
+            <a href="img/microfrontends_approach_to_web_applications.png"><img src="img/microfrontends_approach_to_web_applications.png" /></a>
+
+            <p>Microfrontends approach to web applications diagram</p>
+
+            <h2>New direction for JS and Web Applications</h2>
+
+            <p>I believe that we are undergoing another revolution in writing web applications. The microfrontends
+            trend is definitely something to keep an eye out for. I will most likely write on this topic again in the
+            future. For me, there are still several open-ended questions that need to be further investigated. What
+            technology is best for com building out the individual components? How to build the orchestrator assembling
+            app? What is the best approach for communication between components? Stay tuned! :)</p>
 
             <hr class="styled-end" />
 
