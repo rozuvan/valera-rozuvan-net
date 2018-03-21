@@ -37,6 +37,15 @@ body {
   cursor: pointer;
 }
 
+.box.email {
+  width: 21em;
+  background: #e2e1e0;
+}
+
+.box.email:hover {
+  cursor: auto;
+}
+
 .fx {
   box-shadow: 0 0.1em 0.3em rgba(0,0,0,0.12), 0 0.1em 0.2em rgba(0,0,0,0.24);
   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
@@ -52,9 +61,17 @@ body {
   transform: translateY(-50%);
 }
 
+.hidden {
+  display: none;
+}
+
 .fancy {
   font-family: Patua One;
   font-size: 2.3em;
+}
+
+.fancy.email {
+  font-size: 1.5em;
 }
 
 .footer {
@@ -65,5 +82,11 @@ body {
 
 a {
   text-decoration: none;
+  outline: none;
+  border: none;
   color: black;
+}
+
+.footer a {
+  border-bottom: 0.1em solid black;
 }
