@@ -1,7 +1,23 @@
 @font-face {
   font-family: 'Patua One';
-  src: url('fonts/PatuaOne-Regular.woff2') format('woff2'),
-    url('fonts/PatuaOne-Regular.woff') format('woff');
+  src: url('fonts/patua-one/PatuaOne-Regular.woff2') format('woff2'),
+    url('fonts/patua-one/PatuaOne-Regular.woff') format('woff');
   font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Crimson Text';
+  src: url('fonts/crimson-text/CrimsonText-Regular.woff2') format('woff2'),
+      url('fonts/crimson-text/CrimsonText-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Crimson Text';
+  src: url('fonts/crimson-text/CrimsonText-Bold.woff2') format('woff2'),
+      url('fonts/crimson-text/CrimsonText-Bold.woff') format('woff');
+  font-weight: bold;
   font-style: normal;
 }

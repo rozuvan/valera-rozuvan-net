@@ -1,0 +1,83 @@
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  width: 92%;
+  max-width: 65em;
+}
+
+.gdoc-logo, .link-container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 0;
+  flex-shrink: 0;
+  justify-content: center;
+  height: 5em;
+}
+
+.link-container .title, .link-container .link {
+  display: inline;
+
+  font-family: "Crimson Text";
+  text-align: left;
+}
+
+.link-container .title {
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+.link-container .link {
+  font-size: 1.0em;
+}
+
+.glc-01, .glc-02, .glc-03, .glc-04, .glc-05, .glc-06 {
+  font-weight: bold;
+}
+
+.glc-01 {
+  color: #4285f4;
+}
+
+.glc-02 {
+  color: #ea4335;
+}
+
+.glc-03 {
+  color: #fbbc05;
+}
+
+.glc-04 {
+  color: #4285f4;
+}
+
+.glc-05 {
+  color: #34a853;
+}
+
+.glc-06 {
+  color: #ea4335;
+}
+
+.gdoc-logo img {
+  width: 5em;
+  height: 5em;
+}
+
+.wrap {
+  font-family: "Gotham A", "Gotham B";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.063em;
+  color: #000;
+
+  display: block;
+
+  max-width: 65em;
+  width: 92%;
+  margin: 0 auto;
+}
