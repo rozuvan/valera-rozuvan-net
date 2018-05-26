@@ -324,7 +324,7 @@ p.tech-used {
 }
 
 em.dashed {
-  text-decoration: underline dashed;
   font-weight: normal;
-  padding-left: 2.1em;
+  border-bottom: 0.05em dashed gray;
+  margin-left: 2.1em;
 }
