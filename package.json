@@ -1,0 +1,15 @@
+{
+  "name": "bleeding-edge",
+  "version": "1.0.0",
+  "description": "A place to try out new ideas for the future version of my home page.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rozuvan/bleeding-edge"
+  },
+  "author": "",
+  "license": "MIT",
+  "homepage": "https://github.com/rozuvan/bleeding-edge",
+  "dependencies": {
+    "replace-in-file": "^4.1.0"
+  }
+}

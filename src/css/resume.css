@@ -1,0 +1,339 @@
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+.container.no_select.header {
+  flex-shrink: 0;
+  height: 9em;
+}
+
+.container .header {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  width: 92%;
+  max-width: 65em;
+  padding: 1em 0;
+  font-family: "Crimson Text";
+}
+
+.container .header a {
+  border: none;
+}
+
+.gdoc-logo, .link-container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 0;
+  flex-shrink: 0;
+  justify-content: center;
+  height: 5em;
+}
+
+.link-container .title, .link-container .link {
+  display: inline;
+  text-align: left;
+}
+
+.link-container .title {
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+.link-container .link {
+  font-size: 1.0em;
+}
+
+.glc-01, .glc-02, .glc-03, .glc-04, .glc-05, .glc-06 {
+  font-weight: bold;
+}
+
+.glc-01 {
+  color: #4285f4;
+}
+
+.glc-02 {
+  color: #ea4335;
+}
+
+.glc-03 {
+  color: #fbbc05;
+}
+
+.glc-04 {
+  color: #4285f4;
+}
+
+.glc-05 {
+  color: #34a853;
+}
+
+.glc-06 {
+  color: #ea4335;
+}
+
+.gdoc-logo img {
+  width: 5em;
+  height: 5em;
+}
+
+.wrap {
+  font-family: "Crimson Text";
+  font-weight: normal;
+  font-size: 1.063em;
+  color: #000;
+
+  display: block;
+
+  max-width: 65em;
+  width: 92%;
+  margin: 0 auto;
+}
+
+.grid {
+  background: white;
+  margin: 0 0 1.25em 0;
+}
+
+.grid:after {
+  /* Or @extend clearfix */
+  content: "";
+  display: table;
+  clear: both;
+}
+
+[class*='col-'] {
+  padding-right: 0;
+}
+
+@media only screen and (min-width: 31em) {
+  [class*='col-'] {
+    float: left;
+    padding-right: 1.25em;
+  }
+}
+
+.col-2-3 {
+  width: 100%;
+}
+
+@media only screen and (min-width: 31em) {
+  .col-2-3 {
+    width: 66.66%;
+  }
+}
+
+.col-1-3 {
+  margin-bottom: 1.25em;
+  text-align: center;
+  width: 100%;
+}
+
+@media only screen and (min-width: 31em) {
+  .col-1-3 {
+    width: 33.33%
+  }
+}
+
+.col-1-2 {
+  width: 100%;
+}
+
+@media only screen and (min-width: 31em) {
+  .col-1-2 {
+    width: 50%;
+  }
+}
+
+.col-1-4 {
+  width: 25%;
+}
+
+.col-1-8 {
+  width: 12.5%;
+}
+
+@media only screen and (min-width: 49em) {
+  .main {
+    margin: 0 0 0 0;
+  }
+}
+
+.resume-container {
+  color: #111111;
+  border: 0.1em solid #989898;
+  border-radius: 0.4em;
+  padding: 0.8em;
+  width: 95%;
+  margin: 0 auto 0 auto;
+  text-align: left;
+  font-family: "Crimson Text";
+  background-color: white;
+}
+
+.resume-container a {
+  border-bottom: 0.1em solid black;
+}
+
+.resume-container em {
+  font-weight: bold;
+}
+
+@media only screen and (min-width: 31em) {
+  .resume-container {
+    width: 80%;
+  }
+}
+
+section {
+  display: block;
+}
+
+.resume-container .grid {
+  background: none;
+}
+
+.resume-container p {
+  margin: 0;
+  font-weight: normal;
+  font-size: 0.9em;
+}
+
+.resume-container h4, .resume-container h5 {
+  /* margin-top: 0.938em; */
+  margin-bottom: 1.2em;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+.resume-container h5 {
+  font-size: 1.0em;
+  text-transform: none;
+  margin-bottom: 0;
+}
+
+.resume-container .header-resume {
+  padding-top: 1.9em;
+  border-bottom: 0.075em solid #CCC;
+}
+
+section.header-resume {
+  padding-bottom: 0.6em;
+}
+
+section.objective, section.education, section.experience, section.skills, section.publications {
+  border-bottom: 0.075em solid #CCC;
+  padding-bottom: 0.8em;
+}
+
+section.skills {
+  padding-bottom: 1.8em;
+}
+
+section.experience {
+  padding-bottom: 0;
+}
+
+.resume-container .header-resume p {
+  line-height: 1.1em;
+  margin: 0;
+}
+
+.resume-container .objective,
+.resume-container .skills,
+.resume-container .publications,
+.resume-container .languages {
+  padding-top: 1.9em;
+}
+
+.resume-container .languages {
+  margin-bottom: 1.25em;
+}
+
+.linfo {
+  text-align: center;
+}
+
+@media only screen and (min-width: 31em) {
+  .linfo {
+    text-align: right;
+  }
+}
+
+.rinfo {
+  text-align: center;
+}
+
+@media only screen and (min-width: 31em) {
+  .rinfo {
+    text-align: left;
+  }
+}
+
+.experience {
+  margin: 1.875em 0;
+}
+
+.experience .grid {
+  margin: 0;
+}
+
+.experience .postitle {
+  text-decoration: underline;
+}
+
+.experience .posdetails {
+  margin-top: 0.625em;
+}
+
+.experience .lposinfo {
+  text-align: left;
+}
+
+@media only screen and (min-width: 31em) {
+  .experience .lposinfo {
+    text-align: right;
+  }
+}
+
+.experience ul {
+  list-style-type: disc;
+  margin-left: 2%;
+}
+
+.resume-container p {
+  margin: 0 0 1.2em 0;
+  font-weight: normal;
+  font-size: 1.0em;
+  line-height: 1.2em;
+}
+
+.rposition {
+  margin-bottom: 2.2em;
+  border-top: 0.1em dashed gray;
+  padding-top: 0.7em;
+}
+
+.posdetails li p {
+  margin: 0;
+}
+
+p.tech-used {
+  margin-top: 1.2em;
+}
+
+.skills ul, .languages ul {
+  list-style-type: disc;
+  margin-left: 2%;
+}
+
+.skills ul p, .languages ul p {
+  margin: 0;
+}
+
+em.dashed {
+  font-weight: normal;
+  border-bottom: 0.05em dashed gray;
+  margin-left: 2.1em;
+}

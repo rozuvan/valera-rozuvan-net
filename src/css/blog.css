@@ -1,0 +1,75 @@
+/* Articles */
+
+.site-articles {
+    text-align: left;
+    padding: 1em 1em;
+}
+
+.archive-search input {
+    font-size: 1em;
+}
+
+.site-articles > article {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1em;
+    word-break: break-word;
+    line-height: 1.58;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.article-body ul {
+    margin: 0;
+}
+
+.article-body a {
+    color: #0060a0;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(0,96,160,0.15);
+}
+
+.article-body a:visited {
+    color: #70a0b0;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(112, 160, 176, 0.15);
+}
+
+.article-body a:hover {
+    color: #b03000;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(176, 48, 0, 0.15);
+}
+
+.article-body a.nohover {
+    border-bottom: 0;
+}
+
+.archive-list {
+    padding-left: 0;
+}
+
+.archive-list li {
+    list-style-type: none;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.archive-list li .title {
+  font-size: 2em;
+}
+
+.archive-list li .date {
+    opacity: 0.5;
+    margin-left: 0.5em;
+    font-size: 1em;
+    white-space: nowrap;
+}
+
+.archive-list li.hidden {
+    display: list-item;
+    opacity: 0.5;
+}
+
+.archive-list li.hidden .date {
+    opacity: 0.3;
+}

@@ -1,0 +1,200 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  flex: 1 0 auto;
+  margin-bottom: 1.8em;
+}
+
+.footer {
+  flex-shrink: 0;
+  height: 3em;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.footer a, .footer a:visited, .footer a:hover, .footer a:active, .footer a:link {
+  text-decoration: none;
+  outline: none;
+  border: none;
+  color: black;
+  border-bottom: 0.1em solid black;
+}
+
+h1 {
+  font-family: "SpecialElite";
+  font-size: 3em;
+  font-weight: normal;
+  font-style: normal;
+  text-align: center;
+  padding-top: 0.8em;
+  padding-bottom: 0.1em;
+}
+
+h2 {
+  font-family: "DosisLight";
+  font-size: 1.5em;
+  font-weight: normal;
+  font-style: normal;
+  text-align: center;
+  padding-top: 0.1em;
+  padding-bottom: 1.8em;
+}
+
+h2.no-btm-padd {
+  padding-bottom: 0.2em;
+}
+
+p {
+  font-family: "ArbutusSlabRegular";
+  font-size: 1.2em;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.4em;
+  padding-top: 0.4em;
+  padding-bottom: 0.4em;
+  text-indent: 2.4em;
+}
+
+p.end_stars {
+  margin: 1.1em 0 0.5em 0;
+  padding: 0;
+}
+
+blockquote {
+  font-family: "AveriaSansLibreItalic";
+  background: #f9f9f9;
+  border-left: 0.75em solid #ccc;
+  margin: 1.5em 0 1.5em 0;
+  padding: 0.5em 0.75em;
+  quotes: "\201C""\201D""\2018""\2019";
+
+  -moz-box-shadow: 10px 0px 10px 1px #ccc;
+  -webkit-box-shadow: 10px 0px 10px 1px #ccc;
+  box-shadow: 10px 0px 10px 1px #ccc;
+}
+
+blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+
+blockquote p {
+  font-family: "AveriaSansLibreItalic";
+  display: inline;
+  clear: both;
+  font-size: 1.1em;
+}
+
+blockquote h3 {
+  font-family: "AveriaSansLibreBold";
+  display: block;
+  clear: both;
+  text-align: right;
+  margin-right: 1.0em;
+  margin-bottom: 0.4em;
+}
+
+.codeblock {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  width: 100%;
+  height: 400px;
+  font-size: 1.2em;
+}
+
+.CodeMirror {
+  height: 400px;
+  font-size: 1.2em;
+}
+
+.grid-two {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+.grid-two .col-one {
+  width: 50%;
+  display: inline;
+  float: left;
+}
+
+.grid-two .col-one img {
+  display: block;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1.5em;
+}
+
+.grid-two .col-two {
+  width: 50%;
+  display: inline;
+  float: right;
+}
+
+.grid-two .col-two img {
+  display: block;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1.5em;
+}
+
+a:link {
+  color: #0651A1;
+}
+a:active {
+  color: #0651A1;
+}
+a:visited {
+  color: #0651A1;
+}
+a:hover {
+  color: #0651A1;
+}
+
+a.cite_ref {
+  vertical-align: super;
+  line-height: 1;
+  unicode-bidi: isolate;
+  white-space: nowrap;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 70%;
+  font-family: "SpecialElite";
+  letter-spacing: 0.15em;
+  border-bottom: 0;
+  text-decoration: none;
+}
+
+ol.citations {
+  list-style: decimal;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  margin-left: 1em;
+}
+
+ol.citations li {
+  margin-bottom: 0.3em;
+}
+
+p em {
+  font-weight: bold;
+}
