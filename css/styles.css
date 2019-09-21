@@ -1,0 +1,104 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background: #e2e1e0;
+  text-align: center;
+  color: #111111;
+}
+
+.container {
+  flex: 1 0 auto;
+}
+
+.no_select {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.box {
+  background: #fff;
+  border-radius: 0.1em;
+  display: inline-block;
+  height: 13em;
+  margin: 1em;
+  position: relative;
+  width: 21em;
+}
+
+.box:hover {
+  cursor: pointer;
+}
+
+.box.email {
+  width: 21em;
+  background: #e2e1e0;
+}
+
+.box.email:hover {
+  cursor: auto;
+}
+
+.fx {
+  box-shadow: 0 0.1em 0.3em rgba(0,0,0,0.12), 0 0.1em 0.2em rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.fx:hover {
+  box-shadow: 0 2.6em 3.2em rgba(0,0,0,0.25), 0 1em 1em rgba(0,0,0,0.22);
+}
+
+.caption {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.hidden {
+  display: none;
+}
+
+.fancy {
+  font-family: Patua One;
+  font-size: 2.3em;
+}
+
+.fancy.email {
+  font-size: 1.5em;
+}
+
+.fancy.center {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.header, .footer {
+  flex-shrink: 0;
+  height: 3em;
+  font-size: 1.2em;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+  border: none;
+  color: black;
+}
+
+.header a, .footer a {
+  border-bottom: 0.1em solid black;
+}
+
+@media (min-width:1127px) {
+  .header.hide_wide_screen {
+    display: none;
+  }
+}

@@ -1,0 +1,178 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <!--
+    "Remember, the web isn't about control. If a visitor to your site
+    is familiar with using a browser's native form doodad, you won't
+    be doing them any favors if you override the browser functionality
+    with your own widget, even if you think your widget looks better."
+
+    ~ Jeremy Keith
+  -->
+
+  <meta charset="utf-8" />
+  <meta name="description" content="First test of blog's new theme | Blog | Valera Rozuvan" />
+  <meta name="author" content="Valera Rozuvan" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0" />
+
+  <title>First test of blog's new theme</title>
+
+  <link rel="stylesheet" href="/css/reset.css?v=1.0" />
+  <link rel="stylesheet" href="/css/fonts.css?v=1.0" />
+
+  <link rel="stylesheet" href="/css/vendor/codemirror/codemirror.css?v=1.0" />
+  <link rel="stylesheet" href="/css/vendor/codemirror/ambiance.css?v=1.0" />
+  <link rel="stylesheet" href="/css/vendor/baguette-box/baguette-box.css?v=1.0" />
+
+  <link rel="stylesheet" href="/css/blog-article.css?v=1.0" />
+
+</head>
+<body>
+  <div class="container">
+    <h1>First test of blog's new theme</h1>
+
+    <h2 class="no-btm-padd">
+      part of <a href="https://valera.rozuvan.net/blog">bleeding-edge.rozuvan.net/blog</a>
+    </h2>
+    <h2 class="no-btm-padd">
+      keywords: <a href="#">javascript</a>, <a href="#">game of life</a>
+    </h2>
+    <h2>June 09, 2019</h2>
+
+    <p>
+      The purpose of this entry is to show various content and how it looks using the new CSS styling for blog entries. Text, quotations, images, blocks of code. As time will go by, I will update this page to include new types of content. Mostly, this will serve me as a reference card of what I can do here ;)
+    </p>
+
+    <p>
+      <em>Dear reader, please note:</em> the text below is taken fully from Wikipedia, the free encyclopedia. You can browse the original at <a href="https://en.wikipedia.org/wiki/Conway's_Game_of_Life">Conway's Game of Life</a>.
+    </p>
+
+    <p>
+      Ever since its publication, Conway's Game of Life has attracted much interest, because of the surprising ways in which the patterns can evolve. Life provides an example of emergence and self-organization. Scholars in various fields, such as computer science, physics, biology, biochemistry, economics, mathematics, philosophy, and generative sciences have made use of the way that complex patterns can emerge from the implementation of the game's simple rules. The game can also serve as a didactic analogy, used to convey the somewhat counter intuitive notion that "design" and "organization" can spontaneously emerge in the absence of a designer. For example, philosopher and cognitive scientist Daniel Dennett has used the analogue of Conway's Life "universe" extensively to illustrate the possible evolution of complex philosophical constructs, such as consciousness and free will, from the relatively simple set of deterministic physical laws, which might govern our universe.<a class="cite_ref" href="#cite_note_1">[1]</a><a class="cite_ref" href="#cite_note_2">[2]</a><a class="cite_ref" href="#cite_note_3">[3]</a>
+    </p>
+
+    <blockquote>
+      <p>
+        On May 18, 2010, Andrew J. Wade announced a self-constructing pattern, dubbed "Gemini", that creates a copy of itself while destroying its parent.<a class="cite_ref" href="#cite_note_4">[4]</a><a class="cite_ref" href="#cite_note_5">[5]</a> This pattern replicates in 34 million generations, and uses an instruction tape made of gliders oscillating between two stable configurations made of Chapman-Greene construction arms. These, in turn, create new copies of the pattern, and destroy the previous copy. Gemini is also a spaceship, and is the first spaceship constructed in the Game of Life that is an oblique spaceship, which is a spaceship that is neither orthogonal nor purely diagonal.<a class="cite_ref" href="#cite_note_6">[6]</a><a class="cite_ref" href="#cite_note_7">[7]</a> In December 2015, diagonal versions of the Gemini were built.<a class="cite_ref" href="#cite_note_8">[8]</a>
+      </p>
+
+      <h3>
+        &lt;origin&gt;&nbsp; <a href="https://en.wikipedia.org/wiki/Conway's_Game_of_Life">Wikipedia | Conway's Game of Life</a>
+      </h3>
+    </blockquote>
+
+    <p>
+      The earliest interesting patterns in the Game of Life were discovered without the use of computers. The simplest still lifes and oscillators were discovered while tracking the fates of various small starting configurations using graph paper, blackboards, and physical game boards, such as those used in Go. During this early research, Conway discovered that the R-pentomino failed to stabilize in a small number of generations. In fact, it takes 1103 generations to stabilize, by which time it has a population of 116 and has generated six escaping gliders;<a class="cite_ref" href="#cite_note_9">[9]</a> these were the first spaceships ever discovered.<a class="cite_ref" href="#cite_note_10">[10]</a>
+    </p>
+
+    <div class="codeblock">
+      <textarea id="code-one">let a = [34, 203, 3, 746, 200, 984, 198, 764, 9];
+
+function bubbleSort(a)
+{
+    let swapped;
+    do {
+        swapped = false;
+        for (let i = 0; i < a.length - 1; i += 1) {
+            if (a[i] > a[i + 1]) {
+                let temp = a[i];
+                a[i] = a[i + 1];
+                a[i + 1] = temp;
+                swapped = true;
+            }
+        }
+    } while (swapped);
+}
+
+bubbleSort(a);
+console.log(a);
+</textarea>
+    </div>
+
+    <p>
+      Conway's rules may also be generalized such that instead of two states, live and dead, there are three or more. State transitions are then determined either by a weighting system or by a table specifying separate transition rules for each state; for example, Mirek's Cellebration's multi-colored Rules Table and Weighted Life rule families each include sample rules equivalent to Conway's Life.
+    </p>
+
+    <div class="gallery grid-two">
+      <a href="img/2-1.jpg" class="col-one">
+        <img src="img/thumbs/2-1.jpg" alt="First image">
+      </a>
+      <a href="img/2-2.jpg" class="col-two">
+        <img src="img/thumbs/2-2.jpg" alt="Second image">
+      </a>
+    </div>
+
+    <p>
+      There are now thousands of Life programs online, so a full list will not be provided here. The following is a small selection of programs with some special claim to notability, such as popularity or unusual features. Most of these programs incorporate a graphical user interface for pattern editing and simulation, the capability for simulating multiple rules including Life, and a large library of interesting patterns in Life and other CA rules.
+    </p>
+
+    <ol class="citations">
+      <li id="cite_note_1">
+        Dennett, D. C. (1991). Consciousness Explained. Boston: Back Bay Books.
+        ISBN 978-0-316-18066-5.
+      </li>
+      <li id="cite_note_2">
+        Dennett, D. C. (1995). Darwin's Dangerous Idea: Evolution and the Meanings of Life.
+        New York: Simon & Schuster. ISBN 978-0-684-82471-0.
+      </li>
+      <li id="cite_note_3">
+        Dennett, D. C. (2003). Freedom Evolves.
+        New York: Penguin Books. ISBN 978-0-14-200384-8.
+      </li>
+      <li id="cite_note_4">
+        <a href="http://conwaylife.com/forums/viewtopic.php?f=2&t=399&p=2327#p2327">
+          "Universal Constructor Based Spaceship".
+        </a>
+        Conwaylife.com. Retrieved 2012-06-24.
+      </li>
+      <li id="cite_note_5">
+        <a href="http://conwaylife.com/wiki/index.php?title=Gemini">"Gemini – LifeWiki".</a>
+        Conwaylife.com. Retrieved 2012-06-24.
+      </li>
+      <li id="cite_note_6">
+        Aron, Jacob (16 June 2010).
+        <a href="https://www.newscientist.com/article/mg20627653.800-first-replicating-creature-spawned-in-life-simulator.html">
+          "First replicating creature spawned in life simulator".
+        </a>
+        New Scientist. Retrieved 12 October 2013.
+      </li>
+      <li id="cite_note_7">
+        <a href="http://www.conwaylife.com/wiki/Types_of_spaceships#Knightship">"Knightship".</a>
+        Conwaylife.com. Retrieved 2013-10-16.
+      </li>
+      <li id="cite_note_8">
+        <a href="http://www.conwaylife.com/wiki/Demonoid">"Demonoid".</a>
+        Conwaylife.com. Retrieved 18 June 2016.
+      </li>
+      <li id="cite_note_9">
+        <a href="http://www.conwaylife.com/wiki/index.php?title=R-pentomino">"R-pentomino".</a>
+        Conwaylife.com. Retrieved July 12, 2009.
+      </li>
+      <li id="cite_note_10">
+        Stephen A. Silver.
+        <a href="http://www.conwaylife.com/ref/lexicon/lex_g.htm#glider">Glider.</a>
+        Conwaylife.com. Retrieved March 4, 2019.
+      </li>
+    </ol>
+
+    <p class="end_stars">&#9788;&#9788;&#9788;&#9788;&#9788;&#9788;&#9788;</p>
+  </div>
+
+  <div class="footer">
+    <div class="caption">made with &#10084; by
+      <a href="https://valera.rozuvan.net">Valera Rozuvan</a> &#8230;
+      <a href="/">&#8962;</a>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="/js/vendor/codemirror/codemirror.js"></script>
+  <script type="text/javascript" src="/js/vendor/codemirror/codemirror-javascript.js"></script>
+  <script type="text/javascript" src="/js/vendor/baguette-box/baguette-box.js"></script>
+
+  <!-- Local JS script specifically for this page. Stored along-side this index.html file. -->
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>

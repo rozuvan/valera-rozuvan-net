@@ -1,0 +1,59 @@
+@font-face {
+  font-family: 'Patua One';
+  src: url('fonts/patua-one/PatuaOne-Regular.woff2') format('woff2'),
+    url('fonts/patua-one/PatuaOne-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Crimson Text';
+  src: url('fonts/crimson-text/CrimsonText-Regular.woff2') format('woff2'),
+      url('fonts/crimson-text/CrimsonText-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Crimson Text';
+  src: url('fonts/crimson-text/CrimsonText-Bold.woff2') format('woff2'),
+      url('fonts/crimson-text/CrimsonText-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: SpecialElite;
+  src: local("Special Elite"),
+       local("Special-Elite"),
+       url(fonts/blog-article/SpecialElite.ttf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: ArbutusSlabRegular;
+  src: local("Arbutus Slab Regular"),
+       local("Arbutus-Slab-Regular"),
+       url(fonts/blog-article/ArbutusSlab-Regular.ttf);
+}
+
+@font-face {
+  font-family: AveriaSansLibreItalic;
+  src: local("Averia Sans Libre Italic"),
+       local("Averia-Sans-Libre-Italic"),
+       url(fonts/blog-article/AveriaSansLibre-Italic.ttf);
+}
+
+@font-face {
+  font-family: AveriaSansLibreBold;
+  src: local("Averia Sans Libre Bold"),
+       local("Averia-Sans-Libre-Bold"),
+       url(fonts/blog-article/AveriaSansLibre-Bold.ttf);
+}
+
+@font-face {
+  font-family: DosisLight;
+  src: local("Dosis Light"),
+       local("Dosis-Light"),
+       url(fonts/blog-article/Dosis-Light.ttf);
+}

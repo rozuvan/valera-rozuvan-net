@@ -1,0 +1,29 @@
+body {
+  background-color: white;
+}
+
+section.about p, section.about ul, section.about li {
+  text-align: left;
+}
+
+section.about a, section.about a:visited, section.about a:hover, section.about a:active {
+  color: blue;
+}
+
+section.about li {
+  list-style: disc;
+  font-size: 1.2em;
+  line-height: 1.2em;
+}
+
+section.about p {
+  margin-top: 1.3em;
+  margin-bottom: 1.3em;
+  font-size: 1.5em;
+  line-height: 1.2em;
+}
+
+section.about {
+  width: 70%;
+  margin: 3em;
+}
