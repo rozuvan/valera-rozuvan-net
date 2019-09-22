@@ -280,7 +280,7 @@ section.experience {
 }
 
 .experience .postitle {
-  text-decoration: underline;
+  font-style: italic;
 }
 
 .experience .posdetails {
