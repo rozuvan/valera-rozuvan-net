@@ -50,6 +50,16 @@ h2 {
   padding-bottom: 1.8em;
 }
 
+h3 {
+  font-family: "ArbutusSlabRegular";
+  font-size: 1.9em;
+  font-weight: normal;
+  font-style: normal;
+  text-align: left;
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
+}
+
 h2.no-btm-padd {
   padding-bottom: 0.2em;
 }
