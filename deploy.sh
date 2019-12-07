@@ -9,12 +9,19 @@ if [ ! -d "${GH_PAGES_PATH}" ]; then
 fi
 
 if [ -z "${2}" ]; then
-  echo "ERROR! You must provide blog address as a 2nd argument! Exiting..."
+  echo "ERROR! You must provide a blog address as a 2nd argument! Exiting..."
+  exit 0
+fi
+
+if [ -z "${3}" ]; then
+  echo "ERROR! You must provide a short blog address as a 3rd argument! Exiting..."
   exit 0
 fi
 
 BLOG_ADDRESS="${2}"
-DEPLOY_REQUIRED="${3}"
+SHORT_BLOG_ADDRESS="${3}"
+DEPLOY_REQUIRED="${4}"
+DEPLOY_BRANCH="${5}"
 
 # First, create a build directory, and copy raw source there.
 rm -rf ./build
@@ -23,6 +30,7 @@ cp --recursive ./src/* ./build/
 
 # Second, perform some modifications on the `build` folder.
 node scripts/replace-str.js SITE_ADDRESS_REPLACE_STR $BLOG_ADDRESS
+node scripts/replace-str.js SHORT_SITE_ADDRESS_REPLACE_STR $SHORT_BLOG_ADDRESS
 
 # Third, copy `build` folder to `gh-pages` folder.
 cd $GH_PAGES_PATH
@@ -34,7 +42,7 @@ git checkout CNAME
 if [ "${DEPLOY_REQUIRED}" == "true" ]; then
   git add .
   git commit -m "upd"
-  git push origin gh-pages
+  git push origin $DEPLOY_BRANCH
 fi
 
 cd $WORKING_DIR
