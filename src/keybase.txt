@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/valera_rozuvan
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://valera.rozuvan.net
+  * I am valera_rozuvan (https://keybase.io/valera_rozuvan) on keybase.
+  * I have a public key ASAryQPuhLVh4Yk2P74LE9dZQJZxPUCoW23GIinbO6Sd9wo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120f22828179fd82f1ae36330757b5bb4d4c4c1acb33aecb293020bdef4dcce67370a",
+      "host": "keybase.io",
+      "kid": "01202bc903ee84b561e189363fbe0b13d7594096713d40a85b6dc62229db3ba49df70a",
+      "uid": "18321997386022e0537c4f014614b719",
+      "username": "valera_rozuvan"
+    },
+    "merkle_root": {
+      "ctime": 1611555566,
+      "hash": "f4337f45c936392e10ba3084030f51556ed60ddd5e0f9c1262fc6127944e2415b2a77522e78c99a199d22655b0c06a05173946b9ed627214742c936e20977974",
+      "hash_meta": "2bcfa9e9d123d9a9e4ea68e01729c9b05b8f7fd7c4fbcf06b6aa08b1e2e406dd",
+      "seqno": 18896228
+    },
+    "service": {
+      "entropy": "thTkPSGyN4Ap++KcqB+y4keO",
+      "hostname": "valera.rozuvan.net",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.5.2"
+  },
+  "ctime": 1611555583,
+  "expire_in": 504576000,
+  "prev": "5e54f90cf9213cadb54cf15e13eff938b92450b9962d915a79b970da678fcf4f",
+  "seqno": 16,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgK8kD7oS1YeGJNj++CxPXWUCWcT1AqFttxiIp2zuknfcKp3BheWxvYWTESpcCEMQgXlT5DPkhPK21TPFeE+/5OLkkULmWLZFaeblw2mePz0/EIDPOHZ4bjLnCSdCVPt5lXRds+d9UuOejpozMFl8Z+nqXAgHCo3NpZ8RAeOZ8ooZUZJEcAJaTC5q8k6FnG0spBeGDeJzGdBo8jb+WS2L83GXYXdAh86baF7WC1OfHTxgveAR7wK5Y0sSgDKhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIE4XiIrUwIEJ4PZkf5S3d82YijfmfQwP/0iPRb8jBwGUo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/valera_rozuvan
+
+==================================================================
