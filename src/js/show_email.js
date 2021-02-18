@@ -48,25 +48,14 @@
 
   function getEmail() {
     var eMailLetters = [
-      'v', 'j', 'a', 'q', 'l', 'n', 'e', 'u', 'r', 'c', 'a', 'o', // UIgyu.63t7^**YO
-      '.', '4', // ^&*UO5t@73.u4^R%%&I$6 7 t 76R% ^
-      'r', 'k', 'o', 'e', 'z', '7', 'u', '2', 'v', 'f', 'a', ',', 'n', '5', // %$^*&.()
-      '@', 'j', //   7 &&*  66.  6 67786 ^$@#@#$.%^*
-      'g', 's', 'm', 'j', 'a', '7', 'i', 'c', 'l', '9', // // # @@ /
-      '.', 'l', /* sjfhf 79 *@  &*879 3467. ^%^&^%&*  */
-      'c', 'd', 'o', 'j', 'm', '2' // @@@.
+      '2', 'c', '7', 'v', '7', 'c', 'z', 'k', '8', '5', 'j', '3', // UIgyu.63t7^**YO
+      '@', //   7 &&*  66.  6 67786 ^$@#@#$.%^*
+      'p', 'r', 'o', 't', 'o', 'n', 'm', 'a', 'i', 'l',
+      '.', /* sjfhf 79 *@  &*879 3467. ^%^&^%&*  */
+      'c', 'o', 'm' // @@@.
     ];
 
-    var eMailLettersActual = [];
-    var c;
-
-    for (c = 0; c < eMailLetters.length; c += 1) {
-      if (c % 2 === 0) {
-        eMailLettersActual.push(eMailLetters[c]);
-      }
-    }
-
-    return eMailLettersActual.join('');
+    return eMailLetters.join('');
   }
 
   function init() {
